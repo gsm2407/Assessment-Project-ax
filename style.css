@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 2px;
+
+}
+
+h1{
+    font-size: xx-large;
+}
+
+h3{
+    color: #dfd5d5;
+    font: icon;
+    
+}
+.header{
+    min-height: 50%;
+    width: 100%;
+    background-image: linear-gradient(rgba(123, 124, 160, 0.7),rgba(133, 135, 160, 0.7)),url(images/highresolutionwhitehousepic.jpg);
+    background-position: center;
+    background-size:cover;
+    position:relative;
+    
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 50px;
+    height: 50px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: center;
+
+
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color:black;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 100%;
+    height:2px;
+    background:none;
+    display:block;
+    margin: auto;
+}
+.button{
+    background: none;
+    border: none;
+    position: relative;
+    
+}
+
+button .fa-solid{
+    width: 25px;
+    color: #555;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.text-box{
+    color: #fcf6f6;
+    padding: 6% 6%;
+    text-align: center;
+
+}
+
+.search-box{
+    width: 600px;
+    background: #fff;
+    margin:1px auto;
+    border-radius: 5px;
+    margin-top: -70px;
+
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+input{
+    flex: 1;
+    height: 36px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 45px;
+}
+.column-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 325px;
+    background-color: #b910b9ef;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(236, 232, 232, 0.2);
+    margin: 20px;
+    height: 400px;
+}
+
+.card img{
+    width: 100%;
+    height: 50%;
+}
+
+.panel{
+    padding: 5%;
+    border-radius: 9px;
+
+}
+span.date{
+    color: rgb(63, 150, 60);
+    font-weight: 700;
+}
+a.allbtn{
+    display: block;
+    width: 10%;
+    margin: 5% auto;
+    background: var(--primary-color);
+    text-align: center;
+    color: #fff;
+    padding: 1%;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.card a{
+    text-decoration: none;
+    color: rgba(41, 31, 180, 0.692);
+}
+.breaker{
+    display: inline-block;
+    height: 5px;
+    background: mediumaquamarine;
+    width: 30px;
+    position: relative;
+    border-radius: 4px;
+}
+.breaker:after{
+    position: absolute;
+    content: "";
+    background: mediumaquamarine;
+    width: 30px;
+    height: 5px;
+    left: 150%;
+    border-radius: 4px;
+}
+
+.links{
+    flex: 1;
+    text-align: center;
+}
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: white;
+}
+
+a{
+    color: #fcf6f6;
+}
+a:hover{
+    color: palevioletred;
+    text-decoration: underline;
+}
+a{
+    text-decoration: none;
+}
+
+.take-action{
+    text-align: center;
+    padding: 100px;
+}
+
+.candidates{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.candidate img{
+    width: 80%;
+    height: 80%;
+    padding: 18px;
+    margin: 9px;
+    border-radius: 10%;
+    box-shadow: #fcf6f6;
+}
+.take-action h3{
+    color:darkred;
+}
+
+.candidate p{
+    color:cornsilk;
+    font: bold;
+}
+.candidate h4{
+    color: azure;
+}
+.candidate h5{
+    color: brown;
+}
+
+.slider-wrapper{
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 70px 55px;
+}
+
+.card-list .card-item {
+    color: #fff;
+    user-select: none;
+    width: fit-content;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 18px;
+}
+
+.card-list .card-item .user-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+.card-list .card-item .message-button{
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background:lightcoral;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #e213ae;
+}
+
+.slider-wrapper .swiper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+    transition: 0.2s ease;
+}
+
+
+.slider-wrapper .swiper-slide-button:hover{
+    color: #4658ff;
+
+}
+
+.reviews{
+    text-align: center;
+    padding: 9px;
+}
+
+.review-btn{
+    display: inline-block;
+    text-decoration-color: white;
+    color: #ece3e3;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #f44336;
+    position: relative;
+    margin-top: 18px;
+    cursor: pointer;
+    
+}
+
+.yougov{
+    text-align: center;
+    margin: 104px;
+}
+
+.nav-link{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #a1652c;
+}
+
+.nav-link:hover{
+    color: green;
+}
+
+.scroll-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #f44336;
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.row2{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #041642;
+    padding: 70px 0;
+
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-top: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 7px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    border-radius: 40%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+@media(max-width: 700px){
+    h1{
+        font-size: 20px;
+    }
+}
+    
